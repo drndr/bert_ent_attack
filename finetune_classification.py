@@ -4,23 +4,31 @@ import torch
 from torch import cuda
 from torch.utils.data import Dataset, DataLoader
 
-import logging
-import matplotlib.pyplot as plt
-
-from sklearn import metrics
-
-from timeit import default_timer as timer
+from transformers import BertConfig, BertForSequenceClassification
 
 from opacus import PrivacyEngine
 
-from transformers import BertConfig, BertForSequenceClassification
+from sklearn import metrics
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"]="0"
+import logging
+import random
+from timeit import default_timer as timer
 
-# Custom Lib
+#Custom Lib
 import util
 
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
+
+##############################################################
+# Set Random Seeds for Reproducibility
+##############################################################
+
+seed_value = 420
+torch.manual_seed(seed_value)
+os.environ['PYTHONHASHSEED']=str(seed_value)
+random.seed(seed_value)
+np.random.seed(seed_value)
 
 ##############################################################
 # Experiment Setup
@@ -31,7 +39,7 @@ dataset = "enron"
 bert_model_type = "bert-base-cased"  # bert-base-cased
 TRAIN_BATCH_SIZE = 32
 TEST_BATCH_SIZE = 1
-LEARNING_RATE = 1e-5
+LEARNING_RATE = 1e-3
 n_epochs = 10
 
 if dataset=="enron":
@@ -40,7 +48,7 @@ else:
     n_labels=39 #Blogauth
 
 # Fine-tuning method
-freeze_pretrained_layers = False # Must be True if differential_privacy is True
+freeze_pretrained_layers = True # Must be True if differential_privacy is True
 differential_privacy = False
 
 # DP specific parameters
