@@ -23,27 +23,27 @@ The subfolders contain additional README files to prepare the experiments.
 
 ### Fine-tuning
 
-    The finetune_classification.py script contains our implementation of running the fine-tuning setups.
+The finetune_classification.py script contains our implementation of running the fine-tuning setups.
 
-    #### Get up and running
+#### Get up and running
 
-    1. Make sure the ./datasets contains the training and test set
-    2. Check for dependencies: numpy, pytorch, transformers, opacus, sklearn
+1. Make sure the ./datasets contains the training and test set
+2. Check for dependencies: numpy, pytorch, transformers, opacus, sklearn
 
-    #### Configuration
+#### Configuration
 
-    A specific fine-tuning setup can be configured by setting the following
-    global variables in the script:
-    * dataset
-    * bert_model_type
-    * TRAIN_BATCH_SIZE
-    * TEST_BATCH_SIZE
-    * LEARNING_RATE
-    * n_epochs
-    * freeze_pretrained_layers (optional)
-    * differential_privacy (optional)
-    * noise_multiplier (optional)
-    * grad_clipping_threshold (optional
+A specific fine-tuning setup can be configured by setting the following
+global variables in the script:
+* dataset
+* bert_model_type
+* TRAIN_BATCH_SIZE
+* TEST_BATCH_SIZE
+* LEARNING_RATE
+* n_epochs
+* freeze_pretrained_layers (optional)
+* differential_privacy (optional)
+* noise_multiplier (optional)
+* grad_clipping_threshold (optional
 
 ### Text Generation
 
