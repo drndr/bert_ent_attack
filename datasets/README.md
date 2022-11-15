@@ -1,4 +1,4 @@
-This folder contains a subfolder for each dataset (enron, blogauth). Both subfolder contains the
+This folder contains a subfolder for each dataset (enron, blogauth). Both subfolder contain the
 the train_data.json and test_data.json files and the
 Jupyter notebook scripts (enron_cleans.ipynb, blog_cleans.ipynb) containing the preprocessing steps
 and visualization results.
