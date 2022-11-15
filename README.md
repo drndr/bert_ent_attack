@@ -14,7 +14,7 @@ different components.
         |   ├── enron                        # Train-test split of the Enron dataset with the preprocessing script
     |   ├── entities                         # Collected entity lists stored as .json, scripts for collecting the entities
     |   ├── finetuned_models                 # Saved fine-tuned models
-    |   ├── samples                          # Generated text samples
+    |   ├── samples                          # Generated text samples as .txt files
     └── README                               # Project structure overview
     
 The subfolders contain additional README files to prepare the experiments.
@@ -44,3 +44,21 @@ global variables in the script:
 * differential_privacy (optional)
 * noise_multiplier (optional)
 * grad_clipping_threshold (optional
+
+### Text Generation
+
+The text_generation.py contains our implementation of running the text generation setups.
+
+#### Get up and running
+
+1. Make sure the ./finetuned_models contains the models to be used
+2. Check for dependencies: numpy, pytorch, transformers
+
+#### Configuration
+
+A specific text generation setup can be configured by setting the following
+global variables in the script:
+* fine_tuning
+* dataset
+* prompt_type
+* n_samples
