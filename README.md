@@ -23,7 +23,7 @@ The subfolders contain additional README files to prepare the experiments.
 
 ### Fine-tuning
 
-The finetune_classification.py contains our implementation of running the fine-tuning setups.
+The finetune_classification.py script contains our implementation of running the fine-tuning setups.
 
 #### Get up and running
 
@@ -47,7 +47,7 @@ global variables in the script:
 
 ### Text Generation
 
-The text_generation.py contains our implementation of running the text generation setups.
+The text_generation.py script contains our implementation of running the text generation setups.
 
 #### Get up and running
 
@@ -62,3 +62,22 @@ global variables in the script:
 * dataset
 * prompt_type
 * n_samples
+
+### Evaluation
+
+In this executable python script contains the implementation for evaluating our experimental
+configurations.
+
+#### Get up and running
+
+1. Make sure the ./entities and ./samples folders contains the entity lists and text
+samples
+2. Check for dependencies: numpy , ahocorapy
+
+#### Confifugration
+
+A specific evaluation setup can be configured by setting the following
+global variables in the script:
+* entity_file
+* text
+* k_value
