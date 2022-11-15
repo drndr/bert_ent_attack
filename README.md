@@ -34,13 +34,13 @@ The finetune_classification.py contains our implementation of running the fine-t
 
 A specific fine-tuning setup can be configured by setting the following
 global variables in the script:
-● dataset
-● bert_model_type
-● TRAIN_BATCH_SIZE
-● TEST_BATCH_SIZE
-● LEARNING_RATE
-● n_epochs
-● freeze_pretrained_layers (optional)
-● differential_privacy (optional)
-● noise_multiplier (optional)
-● grad_clipping_threshold (optional
+* dataset
+* bert_model_type
+* TRAIN_BATCH_SIZE
+* TEST_BATCH_SIZE
+* LEARNING_RATE
+* n_epochs
+* freeze_pretrained_layers (optional)
+* differential_privacy (optional)
+* noise_multiplier (optional)
+* grad_clipping_threshold (optional
