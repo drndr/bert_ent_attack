@@ -6,7 +6,7 @@ fine-tuning datasets
 
 #### Get up and running
 1. Make sure the ./datasets folder contains the train_data.json files
-2. Check for dependencies: numpy, pythorch, spacy
+2. Check for dependencies: `numpy`, `pythorch`, `spacy`
 
 #### Configuration
 
@@ -22,7 +22,7 @@ Corpus)
 #### Get up and running
 1. Make sure the ./entities folder contains the original entity files,
 collected with save_ner.py
-2. Check for dependencies: datasets, numpy, ahocorapy
+2. Check for dependencies: `datasets`, `numpy`, `ahocorapy`
 
 #### Configuration
 A specific entity list can be created by setting the following global
