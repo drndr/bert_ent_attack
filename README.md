@@ -17,7 +17,7 @@ different components.
     |   ├── samples                          # Generated text samples as .txt files
     └── README                               # Project structure overview
     
-The subfolders contain additional README files to prepare the experiments.
+The subfolders datasets and entities contain additional README files with information on how to prepare the experiments.
 
 ## Run experiments
 
@@ -28,7 +28,7 @@ The finetune_classification.py script contains our implementation of running the
 #### Get up and running
 
 1. Make sure the ./datasets contains the training and test set
-2. Check for dependencies: numpy, pytorch, transformers, opacus, sklearn
+2. Check for dependencies: `numpy`, `pytorch`, `transformers`, `opacus`, `sklearn`
 
 #### Configuration
 
@@ -52,7 +52,7 @@ The text_generation.py script contains our implementation of running the text ge
 #### Get up and running
 
 1. Make sure the ./finetuned_models contains the models to be used
-2. Check for dependencies: numpy, pytorch, transformers
+2. Check for dependencies: `numpy`, `pytorch`, `transformers`
 
 #### Configuration
 
@@ -72,7 +72,7 @@ configurations.
 
 1. Make sure the ./entities and ./samples folders contains the entity lists and text
 samples
-2. Check for dependencies: numpy , ahocorapy
+2. Check for dependencies: `numpy` , `ahocorapy`
 
 #### Confifugration
 
