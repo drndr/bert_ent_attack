@@ -45,7 +45,7 @@ global variables in the script:
 * freeze_pretrained_layers (optional)
 * differential_privacy (optional)
 * noise_multiplier (optional)
-* grad_clipping_threshold (optional
+* grad_clipping_threshold (optional)
 
 ### Text Generation
 
